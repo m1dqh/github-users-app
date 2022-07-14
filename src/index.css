@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 500ms ease-in-out, color 100ms ease, border-color 300ms ease-in-out, box-shadow 500ms ease-in-out, fill 100ms ease-in-out;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    margin-block: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: var(--bg);
+    background-clip: content-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+header {
+    padding: 30px 80px;
+}
+
+.theme-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 100px;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: calc(var(--radius) * 4);
+    background-color: var(--toggler);
+    cursor: pointer;
+}
+
+.react-icons {
+    vertical-align: middle;
+    visibility: hidden;
+    opacity: .5;
+    fill: var(--icon-color);
+    transition: opacity .4s
+}
+
+.choosen-theme {
+    visibility: visible;
+    opacity: 1;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1.5em;
+}
+
+
+@media screen and (max-width: 500px) {
+    .card-container {
+        width: 350px;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .repo-details {
+        width: 100%;
+    }
+    header {
+        padding: 30px;
+    }
+
 }

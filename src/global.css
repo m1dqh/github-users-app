@@ -1,0 +1,37 @@
+:root {
+    --white: #FFFFFF;
+    --white-bg: #F5F5F5;
+    --white-gray: #e2e2e2;
+    --dark-neutral: #404040;
+    --blue: #649CF0;
+    --dark-blue: #2E333C;
+    --very-dark-blue: #1C2229;
+    --low-saturated-blue: #373F4B;
+    --radius: 4px;
+    --shadow: rgba(213, 211, 211, 0.38);
+}
+
+.light {
+    --bg: var(--white-bg);
+    --text: var(--dark-neutral);
+    --input-bg: #ececec;
+    --input-border: #e3e3e3;
+    --card-bg: var(--white);
+    --toggler: var(--white-gray);
+    --repo-item: #fafafa
+}
+
+.dark {
+    --bg: var(--very-dark-blue);
+    --text: var(--white-bg);
+    --card-bg: var(--dark-blue);
+        --input-bg: var(--dark-blue);
+    --toggler: var(--dark-blue);
+    --input-border: #393e47;
+    --shadow: rgba(39, 47, 56, 0.38);
+    --repo-item: #2c3038
+}
+
+li {
+    list-style: none;
+}

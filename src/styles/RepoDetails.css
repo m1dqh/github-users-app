@@ -1,0 +1,82 @@
+li {
+    width: 95%;
+    background-color: var(--repo-item);
+    border-radius: var(--radius);
+}
+.repo-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height:50px;
+    width: 100%;
+}
+
+.repo-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    width: 60%;
+    max-height: 350px;
+    overflow-x: overlay;
+    align-self: flex-start;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow) 6px 6px 4px;
+}
+
+.repo-items h4 {
+    color: var(--repo-container);
+}
+
+.arrow-down {
+    transform: rotate(180deg);
+}
+
+.repo-info {
+    display: flex;
+}
+
+.repo-container {
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 2px solid #dfdbdb;
+    width: 95%;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+}
+
+.item > * {
+    margin-top: 5px;
+}
+
+.icon {
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+@media screen and (max-width: 500px) {
+    .repo-details {
+        width: 100%;
+        padding: 1rem;
+    }
+    li {
+        width: 100%;
+    }
+    .repo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .repo-container a {
+        margin-top: 10px;
+        align-self: center;
+    }
+}
