@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/m1dqh/github-users-app/static/css/main.af181bf2.css",
+    "main.js": "/m1dqh/github-users-app/static/js/main.6f51e367.js",
+    "index.html": "/m1dqh/github-users-app/index.html",
+    "main.af181bf2.css.map": "/m1dqh/github-users-app/static/css/main.af181bf2.css.map",
+    "main.6f51e367.js.map": "/m1dqh/github-users-app/static/js/main.6f51e367.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af181bf2.css",
+    "static/js/main.6f51e367.js"
+  ]
+}
